@@ -16,7 +16,7 @@ const ManageBookings = () => {
     enabled: !loading,
     queryFn: async () => {
       const res = await fetch(
-        `http://localhost:5000/payments/all`,
+        `https://royalties-buffet-server.onrender.com/payments/all`,
         {
           headers: {
             authorization: `Bearer ${token}`,
