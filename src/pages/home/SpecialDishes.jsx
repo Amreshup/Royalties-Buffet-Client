@@ -37,7 +37,7 @@ const SpecialDishes = () => {
   const slider = React.useRef(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/menu")
+    axios.get("https://royalties-buffet-server.onrender.com/menu")
       .then((response) => {
         const data = response.data;
         const specials = data.filter((item) => item.category === "popular");
