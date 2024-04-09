@@ -214,10 +214,12 @@ const handleSubmit = async (e) => {
         value={foodName}
         onChange={handleFoodNameChange}
       >
-        <option value="">Select Food Name</option>
-        <option value="Pizza">Pizza</option>
-        <option value="Burger">Burger</option>
-        <option value="Pasta">Pasta</option>
+       <option value="">Select Food Category</option>
+        <option value="Pizza">Breakfast</option>
+        <option value="Burger">Lunch</option>
+        <option value="Pasta">Snacks</option>
+        <option value="Pasta">Dinner</option>
+        <option value="Pasta">Drinks</option>
         {/* Add more options as needed */}
       </select>
       <select
