@@ -15,7 +15,7 @@ const Banner = () => {
             <div className="bg-white px-3 py-2 rounded-2xl flex items-center gap-3 shadow-sm w-64">
               <img src="/images/home/b-food1.png" alt=""  className="rounded-2xl"/>
               <div className="space-y-1">
-                <h5 className="text-black" >Spicy noodles</h5>
+                   <h5 className="text-black" >Spicy noodles</h5>
                 <div className="rating rating-sm">
               
                 <input
