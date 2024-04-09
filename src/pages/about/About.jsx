@@ -37,7 +37,7 @@ useEffect(() => {
 
 const fetchComments = async (pageNumber) => {
   try {
-    const response = await axios.get(`http://localhost:5000/comments?page=${pageNumber}`);
+    const response = await axios.get(`https://royalties-buffet-server.onrender.com/comments?page=${pageNumber}`);
     setComments(response.data.comments);
     setPageCount(response.data.totalPages);
   } catch (error) {
@@ -52,7 +52,7 @@ const handlePageChange = (selectedPage) => {
 const handleSubmit = async (e) => {
   e.preventDefault();
   try {
-    await axios.post('http://localhost:5000/comments', { foodName, rating, comment, userName });
+    await axios.post('https://royalties-buffet-server.onrender.com/comments', { foodName, rating, comment, userName });
     alert('Comment Submitted');
     // Clear form fields after successful submission
     setFoodName('');
