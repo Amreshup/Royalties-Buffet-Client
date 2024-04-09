@@ -20,7 +20,7 @@ const AddJob = () => {
     // Fetch job data from MongoDB API
     const fetchJobs = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/jobs');
+        const response = await axios.get('https://royalties-buffet-server.onrender.com/jobs');
         setManagejobs(response.data);
       } catch (error) {
         console.error('Error fetching jobs:', error);
@@ -36,7 +36,7 @@ const AddJob = () => {
     // Fetch job data from MongoDB API
     const fetchJobs = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/apply');
+        const response = await axios.get('https://royalties-buffet-server.onrender.com/apply');
         setJobs(response.data);
       } catch (error) {
         console.error('Error fetching jobs:', error);
@@ -53,7 +53,7 @@ const AddJob = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      await axios.post(`http://localhost:5000/jobs`, formData);
+      await axios.post(`https://royalties-buffet-server.onrender.com/jobs`, formData);
       // Reset form data
       setFormData({ title: '', description: '', logoUrl: '' });
       alert("Job Added Sucessfully!")
