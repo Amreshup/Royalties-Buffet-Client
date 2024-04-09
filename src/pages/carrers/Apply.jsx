@@ -43,7 +43,7 @@ const Apply = () => {
     
         try {
           // Send form data to backend
-          const response = await axios.post('http://localhost:5000/apply', obj);
+          const response = await axios.post('https://royalties-buffet-server.onrender.com/apply', obj);
           console.log('Application submitted:', response.data);
           alert("Thankyou for apply we will text you on whatsapp soon :)")
             // Clear the form fields after successful submission
