@@ -11,7 +11,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/message", { name, email, message });
+      await axios.post("https://royalties-buffet-server.onrender.com/message", { name, email, message });
       alert('Message sent successfully');
       setName('');
       setEmail('');
