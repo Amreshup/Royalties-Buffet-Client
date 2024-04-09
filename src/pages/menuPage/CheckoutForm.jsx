@@ -94,7 +94,7 @@ const CheckoutForm = ({price, cart}) => {
         status: "order pending", address,  itemsName: cart.map(item => item.name, item.quantity), cartItems: cart.map(item => item._id), menuItems: cart.map(item => item.menuItemId)}
          console.log(paymentInfo)
       // send payment info
-      axiosSecure.post('/payments', paymentInfo)
+      axiosSecure.post('https://royalties-buffet-server.onrender.com/payments', paymentInfo)
       .then( res => {
         console.log(res.data)
         if(res.data){
