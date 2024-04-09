@@ -24,7 +24,7 @@ const CustomerSupport = () => {
     const fetchData = async () => {
       try {
         // Make a GET request to the API endpoint
-        const response = await axios.get('http://localhost:5000/message');
+        const response = await axios.get('https://royalties-buffet-client.vercel.app/message');
         // Update state with the fetched data
         setMessages(response.data);
       } catch (error) {
