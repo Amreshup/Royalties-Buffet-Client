@@ -28,6 +28,7 @@ const UserProfile = () => {
         updateUserProfile(name, photoURL).then(() => {
             // Profile updated! // update name also in node database
             alert("Profile updated successfully")
+              window.location.href = "/";
           }).catch((error) => {
             console.log("API Error")
           });
