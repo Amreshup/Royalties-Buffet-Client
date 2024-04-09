@@ -14,7 +14,7 @@ const CommentsManage = () => {
   
   const fetchComments = async (pageNumber) => {
     try {
-      const response = await axios.get(`https://royalties-buffet-client.vercel.app/comments?page=${pageNumber}`);
+      const response = await axios.get(`https://royalties-buffet-server.onrender.com/comments?page=${pageNumber}`);
       setComments(response.data.comments);
       setPageCount(response.data.totalPages);
     } catch (error) {
