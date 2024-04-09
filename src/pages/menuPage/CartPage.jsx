@@ -105,7 +105,7 @@ const CartPage = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        axios.delete(`http://localhost:5000/carts/${item._id}`).then(response => {
+        axios.delete(`https://royalties-buffet-server.onrender.com//carts/${item._id}`).then(response => {
           if (response) {
             refetch();
              Swal.fire("Deleted!", "Your file has been deleted.", "success");
