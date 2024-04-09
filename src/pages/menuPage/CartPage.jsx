@@ -21,7 +21,7 @@ const CartPage = () => {
   // Handle quantity increase
   const handleIncrease = async (item) => {
     try {
-      const response = await fetch(`http://localhost:5000/carts/${item._id}`, {
+      const response = await fetch(`https://royalties-buffet-server.onrender.com/carts/${item._id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -53,7 +53,7 @@ const CartPage = () => {
     if (item.quantity > 1) {
       try {
         const response = await fetch(
-          `http://localhost:5000/carts/${item._id}`,
+          `https://royalties-buffet-server.onrender.com/carts/${item._id}`,
           {
             method: "PUT",
             headers: {
