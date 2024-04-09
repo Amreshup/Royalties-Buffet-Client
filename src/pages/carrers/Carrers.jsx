@@ -18,7 +18,7 @@ useEffect(() => {
   // Fetch data from the backend
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/jobs");
+      const response = await fetch("https://royalties-buffet-server.onrender.com/jobs");
       const data = await response.json();
       setJobs(data);
       setFilteredItems(data); // Initially, display all items
