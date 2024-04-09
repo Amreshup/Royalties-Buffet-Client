@@ -113,7 +113,7 @@ const router = createBrowserRouter([
         {
           path: 'update-menu/:id',
           element: <UpdateMenu/>,
-          loader: ({ params }) => fetch(`http://localhost:5000/menu/${params.id}`)
+          loader: ({ params }) => fetch(`https://royalties-buffet-client.vercel.app//menu/${params.id}`)
         },
         {
           path: 'bookings',
