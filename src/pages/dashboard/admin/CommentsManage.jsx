@@ -14,7 +14,7 @@ const CommentsManage = () => {
   
   const fetchComments = async (pageNumber) => {
     try {
-      const response = await axios.get(`http://localhost:5000/comments?page=${pageNumber}`);
+      const response = await axios.get(`https://royalties-buffet-client.vercel.app/comments?page=${pageNumber}`);
       setComments(response.data.comments);
       setPageCount(response.data.totalPages);
     } catch (error) {
@@ -28,7 +28,7 @@ const CommentsManage = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/comments/${id}`);
+      await axios.delete(`https://royalties-buffet-client.vercel.app/comments/${id}`);
       fetchComments(); // Refresh comments after deletion
     } catch (error) {
       console.error('Error deleting comment:', error);
