@@ -60,14 +60,14 @@ const Apply = () => {
 
     return(
         <>
-         <div className="container mx-auto mt-56">
+          <div className="container mx-auto mt-56">
       <div className="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 mx-auto p-6 bg-white rounded-lg shadow-md border border-gray-200">
-        <h1 className="text-3xl font-bold mb-6 text-center">Apply for <span className="text-green">Job</span></h1>
+        <h1 className="text-black text-3xl font-bold mb-6 text-center">Apply for <span className="text-green">Job</span></h1>
         <form onSubmit={handleSubmit} encType="multipart/form-data">
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">Name</label>
             <input
-              className="form-control w-full border rounded-md px-3 py-2"
+              className="text-black form-control w-full border rounded-md px-3 py-2"
               type="text"
               id="name"
               name="name"
@@ -79,7 +79,7 @@ const Apply = () => {
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">Email</label>
             <input
-              className="form-control w-full border rounded-md px-3 py-2"
+              className="text-black form-control w-full border rounded-md px-3 py-2"
               type="email"
               id="email"
               name="email"
@@ -91,7 +91,7 @@ const Apply = () => {
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">Phone</label>
             <input
-              className="form-control w-full border rounded-md px-3 py-2"
+              className="text-black form-control w-full border rounded-md px-3 py-2"
               type="tel"
               id="phone"
               name="phone"
@@ -103,7 +103,7 @@ const Apply = () => {
           <div className="mb-4">
 <label class="block text-gray-700 text-sm font-bold mb-2">Position:</label>
 <select
-  class="form-select block w-full px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
+  class="text-black form-select block w-full px-4 py-2 border rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-400"
   name="position"
   value={formData.position}
   onChange={handleChange}
@@ -124,7 +124,7 @@ const Apply = () => {
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="resume">Resume</label>
             <input
-              className="form-control w-full border rounded-md px-3 py-2"
+              className="text-black form-control w-full border rounded-md px-3 py-2"
               type="file"
               id="resume"
               name="resume"
