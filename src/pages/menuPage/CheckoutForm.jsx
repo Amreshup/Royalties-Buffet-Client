@@ -188,7 +188,7 @@ const handleCashOnDelivery = async () => {
           value={address}
           placeholder="Please Provide Full Adress!!"
           onChange={(e) => setAddress(e.target.value)}
-          className="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm"
+          className="text-black mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm"
           required
         />
       </div>
