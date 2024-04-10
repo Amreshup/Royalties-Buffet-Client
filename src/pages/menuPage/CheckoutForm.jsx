@@ -178,7 +178,7 @@ const handleCashOnDelivery = async () => {
       </div>
       <div className={`md:w-1/3 w-full border space-y-5  card shrink-0 max-w-sm shadow-2xl bg-base-100 px-4 py-8 ${isDarkMode ? 'dark' : ''}`}>
         <h4 className="text-lg font-semibold">Process your Payment!</h4>
-        <h5 className="font-medium">Credit/Debit Card<span className="italic text-red">(* Currently Unavailable *)</span></h5>
+        <h5 className="font-medium">Credit/Debit Card (<span className="italic text-red"> * Currently Unavailable * </span>)</h5>
         <form onSubmit={handleSubmit}>
         <div className="form-group">
         <label htmlFor="address">Address:</label>
