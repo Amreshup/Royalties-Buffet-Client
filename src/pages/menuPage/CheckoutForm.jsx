@@ -158,7 +158,7 @@ const handleCashOnDelivery = async () => {
       const transitionId = "Cash on delivery";
       setcardError(`Your transaction ID is: ${transitionId}`);
       alert("Order Successful! Thank you For Order :)");  
-      navigate("/order");
+      window.location.href="/order";
     } else {
       alert("Payment failed. Please try again.");
     }
