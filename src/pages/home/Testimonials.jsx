@@ -31,7 +31,7 @@ const Testimonials = () => {
               </div>
               <div className="avatar">
                 <div className="w-12 cursor-pointer">
-                  <img src="/images/home/testimonials/testimonial2.png" />
+                  <img src="/images/home/testimonials/testimonial4.png" />
                 </div>
               </div>
               <div className="avatar">
