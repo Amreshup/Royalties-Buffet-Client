@@ -26,7 +26,7 @@ const Testimonials = () => {
            <div className="avatar-group -space-x-6 rtl:space-x-reverse">
               <div className="avatar">
                 <div className="w-12 cursor-pointer">
-                  <img src="/images/home/testimonials/testimonial1.png" />
+                  <img src="/images/home/testimonials/testimonial5.png" />
                 </div>
               </div>
               <div className="avatar">
@@ -36,7 +36,7 @@ const Testimonials = () => {
               </div>
               <div className="avatar">
                 <div className="w-12 cursor-pointer">
-                  <img src="/images/home/testimonials/testimonial3.png" />
+                  <img src="/images/home/testimonials/testimonial6.png" />
                 </div>
               </div>
             </div>
